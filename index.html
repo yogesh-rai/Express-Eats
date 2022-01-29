@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="resources\styles.css">
+    <link rel="stylesheet" href="resources\mediaqueries.css">
+    <title>Express Eats</title>
+</head>
+
+<body>
+    <header class="hero-section" id="header" >
+       <nav class="navigation">
+               <img src="resources\logo.png" alt="Express Eats logo" id="logo">
+           <div class="main-nav">
+               <ul>
+                   <li><a href="#food">Food delivery</a></li>
+                   <li><a href="#how">How it works</a></li>
+                   <li><a href="#testimonials">Testimonials</a></li>
+                   <li><a href="#sign-up">Sign up</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <div class="hero-box">
+           <h1>Every meal is a happy meal :)</h1>
+           <p id="description">The smart 365-days-per-year food subscription that will deliver tasty and healthy meals at your door-step. Tailored to your personal tastes and nutritional needs.</p>
+           <a href="#sign-up" class="button" id="btn-1">I'm hungry</a>
+           <a href="#how" class="button" id="btn-2">Lean more</a>
+       </div>
+    </header>
+
+    <section class="our-features">
+        <div class="about">
+            <h2>get delicious & healthy food fast</h2>
+            <p id="long-text">Hello, we're Express Eats, your new premium food delivery service. No time for cooking. so, let us take care of that, we're really good at it, we promise!</p>
+        </div>
+
+        <div class="features-card">
+            <div class="1-card">
+                <span class="iconify" data-icon="la:infinity"></span>
+                <h3>Never cook again!</h2>
+                <p>Our subscriptions cover 365 days per year, even including major holidays.</p>
+            </div>
+
+            <div class="2-card">
+                <span class="iconify" data-icon="cil:apple"></span>
+                <h3>Local and organic</h2>
+                <p>Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+            </div>
+
+            <div class="3-card">
+                <span class="iconify" data-icon="ion:leaf-outline"></span>
+                <h3>No waste</h2>
+                <p>All our partners only use reusable containers to package all your meals.</p>
+            </div>
+
+            <div class="4-card">
+                <span class="iconify" data-icon="ci:pause-circle-outline"></span>
+                <h3>Pause anytime</h2>
+                <p>Going on vacation? Just pause your subscription, and we refund unused days.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="meals" id="food">
+        <div class="gallery">
+            <ul>
+                <li><img src="resources\1.jpg" alt="food 1"></li>
+                <li><img src="resources\2.jpg" alt="food 2"></li>
+                <li><img src="resources\3.jpg" alt="food 3"></li>
+                <li><img src="resources\4.jpg" alt="food 4"></li>
+                <li><img src="resources\5.jpg" alt="food 5"></li>
+                <li><img src="resources\6.jpg" alt="food 6"></li>
+                <li><img src="resources\7.jpg" alt="food 7"></li>
+                <li><img src="resources\8.jpg" alt="food 8"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how">
+        <h2>how it works - simple as 1,2,3</h2>
+
+        <div class="container">
+            <div class="img-box">
+                <img src="resources\app-screen-3.png" alt="phone-screen" class="app-img">
+            </div>
+            <div class="steps">
+                <ul>
+                    <li>Choose the subscription plan that best fits your needs and sign up today.</li>
+                    <li>Order your delecious meal using our mobile app or website. Or you can even call us!</li>
+                    <li>Enjoy your meal after less than 20 mins. See you the next time!</li>
+                </ul>
+
+                <div>
+                    <a href="#header" class="download-btn"><img src="resources\download-app.svg" alt="app-store"></a>
+                    <a href="#header" class="download-btn"><img src="resources\download-app-android.png" alt="play-store"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" >
+        <h2>Once you try it, you can't go back</h2>
+        <div class="customers-words">
+            <blockquote>
+                Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.
+                <cite>
+                    <img src="resources\customer-1.jpg">Dave Bryson
+                </cite>
+            </blockquote>
+            <blockquote>
+                I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.
+                <cite>
+                    <img src="resources\customer-2.jpg">Hannah Smith
+                </cite>
+            </blockquote>
+            <blockquote>
+                Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!
+                <cite>
+                    <img src="resources\customer-3.jpg">Steve Miller
+                </cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="pricing"  id="sign-up">
+        <h2>Eating well without breaking the bank</h2>
+        <div class="container" id="pricing-container">
+            <div class="plan" id="plan-1">
+                <h3 id="plan-name">starter</h3>
+                <p class="cost"><span>$</span> 399 </p>
+                <p id="plan-text">per month. That's just $13 per meal!</p>
+                <ul>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>1 meal per day</li>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>Order from 11am to 9pm</li>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>Delivery is free</li>
+                    <li><span class="iconify" data-icon="akar-icons:cross" id="check"></span></li>
+                </ul>
+                <div class="sign-up-btn">
+                    <a href="#header" class="button" id="btn-1">Sign up now</a>
+                </div>
+            </div>
+
+            <div class="plan" id="plan-2">
+                <h3 id="plan-name">complete</h3>
+                <p class="cost"><span>$</span> 649 </p>
+                <p id="plan-text">per month. That's just $11 per meal!</p>
+                <ul>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>2 meals per day</li>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>Order 24/7</li>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>Delivery is free</li>
+                    <li><span class="iconify" data-icon="akar-icons:check" id="check"></span>Get access to latest recipes</li>
+                </ul>
+                <div class="sign-up-btn">
+                    <a href="#header" class="button" id="btn-1">Sign up now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <h2>We're happy to hear from you</h2>
+        
+        <form method="post" action="#" class="contact-form">
+            <div class="rows">
+                <label for="name">Name</label>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+
+            <div class="rows">
+                <label for="mail">E-mail</label>
+                <div>
+                    <input type="email" name="mail" id="mail" placeholder="Your email" required>
+                </div>
+            </div>
+
+            <div class="rows">
+                <label for="find-us">How did you find us?</label>
+                <div>
+                    <select name="find-us" id="find-us">
+                        <option>Please choose one option:</option>
+                        <option value="friends">Friends and family</option>
+                        <option value="search">Search engine</option>
+                        <option value="ads">Advertisement</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="rows">
+                <label for="message">Drop us a line</label>
+                <div>
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+
+            <div class="rows">
+                <label>&nbsp;</label>
+                <div>
+                    <input type="submit" value="send it!">
+                </div>
+            </div>
+        </form>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS app</a></li>
+                    <li><a href="#">Android app</a></li>
+                </ul>
+            </div>
+
+            <div class="social-links">
+                <ul>
+                    <li><a href=#><span class="iconify" data-icon="brandico:facebook-rect" id="social-icons"></span></a></span></li>
+                    <li><a href=#><span class="iconify" data-icon="akar-icons:twitter-fill" id="social-icons"></span></a></li>
+                    <li><a href=#><span class="iconify" data-icon="entypo-social:google" id="social-icons"></span></a></li>
+                    <li><a href=#><span class="iconify" data-icon="ant-design:instagram-outlined" id="social-icons"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <p>Copyright © 2022 by Express Eats, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+ 
+</html>
