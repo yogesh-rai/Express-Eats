@@ -1,0 +1,265 @@
+@media only screen and (max-width: 1200px)
+{
+    #logo{
+        margin: 0 1.2rem;
+        height: 150px;
+        width: auto;
+    }
+    
+    .hero-section{
+        padding: 0 1rem;
+    }
+
+    .hero-box{
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    #description{
+        margin-bottom: 5rem;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0;
+        word-spacing: 2px;
+        margin-left: 0;
+    }
+
+    .our-features{
+        padding: 3rem 3rem;
+    }
+
+    #long-text{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .features-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        margin: 2rem 0 2rem 2rem;
+    }
+
+    .app-img{
+        width: 60%;
+        margin: 3rem 1rem 0 6rem;
+    }
+}
+
+
+@media only screen and (max-width: 1023px)
+{
+    body{
+        font-size: 18px;
+    }
+
+    sections{
+        padding: 60px 0;
+    }
+
+    .plan{
+        padding: 1rem 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 900px)
+{
+    body{
+        font-size: 16px;
+    }
+
+    sections{
+        padding: 40px 0;
+    }
+
+    .plan{
+        padding: 1rem 1rem;
+    }
+
+    .pricing{
+        padding: 30px 0;
+    }
+
+    .download-btn img{
+        height: 30px;
+        width: auto;
+        margin: 0 0 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav  ul{
+        display: none;
+    }
+
+    .features-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav  ul{
+        display: flex;
+        margin: 45px 20px;
+    }
+
+    .main-nav li{
+        list-style-type: none;
+        margin: 0 1rem;
+    }
+
+    .gallery ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .download-btn img{
+        height: 40px;
+        width: auto;
+        text-align: center;
+    }
+
+    .app-img{
+        width: 30%;
+        margin: 0 25%;
+
+    }
+
+    .steps{
+        margin-top:0;
+        padding-left: 2%;
+    }
+
+    sections{
+        padding: 20px 0;
+    }
+
+    .customers-words{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    blockquote{
+        width: 70%;
+        padding: 2%;
+    }
+
+    
+   blockquote::before{
+    font-size: 200%;
+    top: -3px;
+    left: -2px;
+    }
+
+    .pricing{
+        padding: 30px;
+    }
+
+    .plan{
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px rgb(165, 162, 162);
+        margin: 3% 23%;
+        height: 20%;
+        
+    }
+
+}
+
+@media only screen and (max-width: 767px)
+{
+    .main-nav  ul{
+        display: none;
+    }
+
+    .download-btn img{
+        height: 25px;
+        width: auto;
+        text-align: center;
+    }
+
+    .plan{
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px rgb(165, 162, 162);
+        margin: 3% 15%;
+        height: 18%;
+        
+    }
+
+    #plan-2::after{
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 0.2rem 5rem;
+        top: 4%;
+        right: -30%;
+    }
+}
+
+
+@media only screen and (max-width: 480px)
+{
+    .button, input[type="submit"]
+    {
+        text-decoration: none;
+        padding: 2px 10px 6px 10px;
+        font-weight: 500;
+        border-radius: 30px;
+        border: 1px solid #ffa500;
+        font-size: 70%;
+    }
+
+    #description{
+        margin-bottom: 2rem;
+    }
+        
+    .main-nav  ul{
+        display: none;
+    }
+
+    .plan{
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px rgb(165, 162, 162);
+        margin: 3% 7%;
+        height: 18%;
+        
+    }
+
+    #plan-2::after{
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 0.2rem 5rem;
+        top: 4%;
+        right: -30%;
+    }
+
+    .sign-up-btn{
+        margin-top: 10px;
+        margin-left: 20%;
+        margin-bottom: 10px;
+        padding: 1%;
+        font-size: 1.5rem;
+    }
+
+    #logo{
+        height: 120px;
+    }
+
+    input[type="submit"]
+   {
+        padding: 0.6rem 2rem;
+        font-size: 1rem;
+    }
+
+
+
+}
