@@ -1,0 +1,488 @@
+/* -------------- basic setup ------------------ */
+
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgb(48, 46, 46);
+}
+
+/* -------------- Header ------------------ */
+
+.hero-section{
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url("background img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-box{
+    font-size: 140%;
+    position: absolute;
+    text-align: center;
+    padding: 250px auto;
+    color: white;
+    margin-top: rem;
+}
+
+h1{
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+#description{
+    margin-bottom: 7rem;
+    width: 70%;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 400;
+    font-size: 80%;
+    margin-left: 13%;
+}
+
+.button, input[type="submit"]
+{
+    text-decoration: none;
+    padding: 5px 20px 12px 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    border: 2px solid #ffa500;
+}
+
+#btn-1:link , #btn-1:visited
+,input[type="submit"]
+{
+    margin-right: 30px;
+    background-color: orange;
+    color: white;
+    transition: background-color 0.4s;
+}
+
+#btn-1:hover , #btn-1:active
+,input[type="submit"]:hover , input[type="submit"]:active
+{
+    background-color: #cc8400;
+}
+
+#btn-2:link , #btn-2:visited{
+    color: orange;
+    transition: all 0.4s ;
+}
+
+#btn-2:hover , #btn-2:active{
+    color: white;
+    background-color: orange;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    margin: 0 1.2rem;
+    height: 180px;
+    width: auto;
+}
+
+.main-nav  ul{
+    display: flex;
+    margin: 45px 30px;
+}
+
+.main-nav li{
+    list-style-type: none;
+    margin: 0 2rem;
+}
+
+.main-nav li a:link , .main-nav li a:visited
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.5rem;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover , .main-nav li a:active
+{
+    border-bottom: 2px solid orange;
+}
+
+
+/* -------------- Features ------------------ */
+
+.our-features{
+    padding: 3rem 5rem;
+}
+
+h2{
+    text-align: center;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 140%;
+}
+
+h2::after{
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color: orange;
+    margin: 2rem auto;
+}
+
+#long-text{
+    width: 70%;
+    word-spacing: 2px;
+    line-height: 2rem;
+    margin-left: 12rem;
+    font-size: 110%;
+}
+
+.iconify{
+    color: orange;
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+h3{
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+   
+.features-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    margin: 2rem 0 2rem 6rem;
+}
+  
+.features-card p{
+    width: 80%;
+    word-spacing: 2px;
+    line-height: 2rem;
+}
+    
+/* -------------- Favourite meals ------------------ */
+
+.meals{
+    background-color: black;
+    margin: 2rem 0;
+}
+
+.gallery{
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery ul{
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.gallery li{
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition: all 0.4s;
+}
+
+.gallery img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/* -------------- How it works ------------------ */
+
+.how-it-works{
+   padding: 1rem 5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-box{
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 3%;
+}
+
+.app-img{
+    width: 45%;
+    margin: 3rem 1rem 0 12rem;
+}
+
+::marker{
+    color: orange;
+    font-size: 2rem;   
+}
+
+.steps{
+    margin-top: 40px;
+    padding-left: 3%;
+}
+
+.steps li{
+    margin: 3rem 0;
+    font-size: 120%;
+    word-spacing: 2px;
+    font-weight: 550;
+}
+
+.download-btn img{
+    height: 50px;
+    width: auto;
+    margin: 2rem 0 1rem 2rem;
+}
+
+/* -------------- Testimonials ------------------ */
+
+.testimonials{
+    margin-top: 6%;
+    background-image:  linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) , url("back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 3% 0;
+}
+
+.customers-words{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4%;
+}
+
+blockquote{
+    width: 30%;
+    padding: 4.5%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+}
+
+cite{
+    font-size: 90%;
+}
+
+cite img{
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 16%;
+    display: block;
+}
+
+
+/* -------------- Pricing ------------------ */
+
+.pricing{
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+#plan-1{
+    background-color: white;
+}
+
+
+
+.plan{
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px rgb(165, 162, 162);
+    margin-top: 3%;
+}
+
+#plan-text{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(66, 65, 65);
+    margin-bottom: 3rem;
+}
+
+#plan-2{
+    background-color: #ffd588 ;
+    position: relative;
+    overflow: hidden;
+}
+
+#plan-2::after{
+    content: "best value";
+    text-transform: uppercase;
+    background-color: rgb(252, 235, 8);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.2rem 5rem;
+    position: absolute;
+    top: 6%;
+    right: -18%;
+    transform: rotate(45deg);
+}
+
+.sign-up-btn{
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+#plan-name{
+    text-transform: uppercase;
+    color: #ffab11;
+    text-align: center;
+}
+
+.cost{
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.cost span{
+    font-size: 3rem;
+}
+
+.plan ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#check{
+    font-size: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.plan ul li{
+    line-height: 2rem;
+    font-weight: 400;
+    word-spacing: 3px;
+}
+
+
+/* -------------- Contact-form ------------------ */
+
+
+.contact-us{
+    margin-top: 3%;
+}
+
+
+.contact-form{
+    width: 60%;
+    margin: 4% auto;
+}
+
+.rows{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+}
+
+input[type="text"],input[type="email"],select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+label{
+    margin: 0 30%;
+    word-spacing: 1px;
+    font-weight: 550;
+}
+
+input[type="submit"]
+{
+    padding: 0.6rem 3rem;
+    font-size: 1.2rem;
+    
+}
+
+/* -------------- Footer ------------------ */
+
+
+footer{
+    background-color: #333;
+    padding: 2rem 0;
+}
+
+.links ul, .social-links ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links ul li, 
+.social-links ul li{
+    margin: 0 1rem;
+}
+
+.links ul li a:link,
+.links ul li a:visited
+{
+    text-decoration: none;
+    color: #888;
+    font-size: 80%;
+    transition: color 0.2s;
+}
+
+#social-icons
+{
+    font-size: 120%;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.links ul li a:hover,
+#social-icons:hover{
+    color: #ddd;
+}
+
+.copyright-text{
+    text-align: center;
+    color: #888;
+    font-size: 55%;
+    padding-left: 2%;
+}
